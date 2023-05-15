@@ -10,7 +10,9 @@ app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
     console.log(req.body)
-    res.json(res.body)
+    res.json({
+        hello: "world"
+    })
 })
 app.post("/challenge", (req, res) => {
     const data = req.body.data
