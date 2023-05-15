@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
     console.log(req.body)
     res.json(res.body)
 })
